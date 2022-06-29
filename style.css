@@ -1,0 +1,20 @@
+:root {
+    --base: #4CB853;
+    --accent: #F6851F;
+    --bg: #F7FFF5;
+    --error: #F61F1F;
+    --success: #1FF682;
+    --text: #151514;
+    --orange-gr: linear-gradient(360deg, #F6851F 25.58%, rgba(240, 152, 25, 0.17) 110.08%);
+    --green-gr: linear-gradient(29.84deg, rgba(44, 156, 72, 0.66) 37.46%, rgba(0, 227, 174, 0.34) 79.68%);
+    --secondary: #DDE1DC;
+    --plashka: #E2FFDA;
+    --footer: #1E9680;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}

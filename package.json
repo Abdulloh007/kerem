@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Abdulloh007/kerem/issues"
   },
-  "homepage": "https://github.com/Abdulloh007/kerem#readme"
+  "homepage": "https://github.com/Abdulloh007/kerem#readme",
+  "dependencies": {
+    "swiper": "^8.2.5"
+  }
 }
