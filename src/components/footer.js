@@ -1,7 +1,3 @@
-const footer = () => {
-    return `
-        
-    `;
+export const FooterComponent = `
 
-}
-export default footer;
+`;

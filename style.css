@@ -18,3 +18,163 @@ body {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Glob Styles */
+.ek-container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ek-row{
+    padding-right: 15px;
+    padding-left: 15px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.ek-dfw{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.ek-alt-center{
+    align-items: center;
+}
+.ek-jc-center{
+    justify-content: center;
+}
+.ek-jc-sb{
+    justify-content: space-between;
+}
+.ek-h-fit{
+    height: fit-content;
+}
+
+/* Pop Up Styles */
+/*PopUp Stylesheet*/
+@keyframes pop-up {
+    0%{
+        opacity: 0;
+        transform: scale(.8);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes pop-up {
+    0%{
+        opacity: 0;
+        transform: scale(.8);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.ek-pop_up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background-color: rgb(21 43 100 / 20%);
+    overflow-y: overlay;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.ek-pop_up.active {
+    opacity: 1;
+    z-index: 25;
+    animation: .2s pop-up ease-in;
+}
+.ek-pop_up-wrap {
+    position: relative;
+    width: 370px;
+    margin: auto auto;
+    background: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 65px 50px;
+    border-radius: 6px;
+}
+.ek-pop_up-header {
+    margin-bottom: 35px;
+}
+.ek-pop_up-header h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--blue);
+    margin: 0;
+}
+.ek-pop_up-header i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #E3E3E3;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Navigation Styles */
+
+nav.ek-mobile {
+    display: none;
+}
+/* - Humburger - */
+.ek-humburger {
+    position: relative;
+    margin-left: auto;
+    height: 2px;
+    width: 30px;
+    background: var(--blue);
+    transition: all .4s ease;
+    cursor: pointer;
+    z-index: 16;
+}
+.ek-humburger::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-top: 2px solid var(--blue);
+    top: -10px;
+    left: 0;
+    transition: all .4s ease;
+}
+.ek-humburger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid var(--blue);
+    top: 0;
+    left: 0;
+    transition: all .4s ease;
+}
+.ek-humburger.active {
+    transform: rotate(45deg);
+}
+.ek-humburger.active::before {
+    top: -5px;
+    left: 5px;
+    transform: rotate(-90deg);
+}
+.ek-humburger.active::after {
+    left: -100%;
+    opacity: 0;
+}
