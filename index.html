@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekrem - Homepage</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Header Content -->
@@ -250,7 +251,7 @@
         <section class="ek-our_edge">
             <div class="ek-container">
                 <div class="ek-row">
-                    <h1 class="ek-section__heading">Для кого</h1>
+                    <h1 class="ek-section__heading">Наши преимущества</h1>
                     <div class="ek-our_edges__column">
                         <img src="./assets/svg/Components/svg-raiting.svg" class="ek-our_edges__column__img" >
                         <p class="ek-uni__title">Легко вести свой бизнес</p>
@@ -274,6 +275,31 @@
                 </div>    
             </div>
         </section>
+        <!-- Our Partners Section -->
+        <section class="ek-our_partners">
+            <div class="ek-container">
+                <div class="ek-row">
+                    <h1 class="ek-section__heading">С кем мы работаем</h1>
+                    <!-- Swiper -->
+                    <div class="swiper ek-partners__carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ek-partners__logo ek-dfw">
+                                <img src="./assets/img/partners_1.png" alt="">
+                            </div>
+                            <div class="swiper-slide ek-partners__logo ek-dfw">
+                                <img src="./assets/img/partners_2.png" alt="">
+                            </div>
+                            <div class="swiper-slide ek-partners__logo ek-dfw">
+                                <img src="./assets/img/partners_3.png" alt="">
+                            </div>
+                            <div class="swiper-slide ek-partners__logo ek-dfw">
+                                <img src="./assets/img/partners_4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Content -->
@@ -281,6 +307,15 @@
 
 
     <script type="module" src="./index.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".ek-partners__carousel", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true
+      });
+    </script>
 </body>
 </html>
