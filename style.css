@@ -514,5 +514,45 @@ nav.ek-mobile {
 }
 
 
+/* Footer Styles */
+footer {
+    padding: 30px 0 40px;
+    background-color: var(--base);
+}
+.ek-footer__column {
+    box-sizing: border-box;
+    width: calc(25% - (165px / 3));
+    margin-right: 55px;
+}
+.ek-footer__column:last-child {
+    margin-right: 0;
+    width: 25%;
+}
+.ek-footer__column__list {
+    margin: 0;
+    padding: 0;
+}
+.ek-footer__column__list li {
+    padding-bottom: 15px;
+}
+.ek-footer__column__list li a {
+    font-size: 18px;
+    color: var(--text);
+    transition: color .2s ease;
+}
+.ek-footer__column__list li a:hover {
+    color: var(--footer)
+} 
 
 
+
+
+/* Media for Different Screens */
+/* -----Tablet Styles----- */
+@media (max-width: 768px) {
+    
+}
+/* -----Mobile Styles----- */
+@media (max-width: 576px) {
+    
+}
