@@ -5,6 +5,7 @@
     --error: #F61F1F;
     --success: #1FF682;
     --text: #151514;
+    --title: #000000;
     --orange-gr: linear-gradient(360deg, #F6851F 25.58%, rgba(240, 152, 25, 0.17) 110.08%);
     --green-gr: linear-gradient(29.84deg, rgba(44, 156, 72, 0.66) 37.46%, rgba(0, 227, 174, 0.34) 79.68%);
     --secondary: #DDE1DC;
@@ -18,8 +19,20 @@ body {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    background: var(--bg);
 }
 
+/* Default Styles */
+section {
+    margin-bottom: 220px;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
 /* Glob Styles */
 .ek-container{
     max-width: 1140px;
@@ -35,6 +48,9 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+.ek-position_relative {
+    position: relative; 
 }
 .ek-dfw{
     display: -webkit-flex;
@@ -56,6 +72,7 @@ body {
 .ek-h-fit{
     height: fit-content;
 }
+/* Buttons Styles */
 .ek-btn {
     color: var(--text);
     cursor: pointer;
@@ -68,21 +85,47 @@ body {
     padding: 15px;
     transition: all .3s ease-in;
 }
+.ek-btn.disabled {
+    border-color: var(--secondary);
+    background-color: var(--bg);
+    color: var(--secondary);
+    pointer-events: none;
+}
 .ek-btn.ek-success, .ek-btn.ek-success.invert:hover {
     background-color: var(--base);
     border-color: var(--base);
-    color: #fff;
+    color: var(--bg);
 }
 .ek-btn.ek-success:hover, .ek-btn.ek-success.invert {
-    background-color: #fff;
+    background-color: var(--bg);
     border-color: var(--base);
     color: var(--base);
 }
-ul {
-    list-style-type: none;
+/* Title & SubTitle Styles */
+.ek-section__heading{
+    width: 100%;
+    font-weight: 600;
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 55px;
+    text-align: center;
+    margin-bottom: 50px;
 }
-a {
-    text-decoration: none;
+.ek-uni__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+}
+.ek-uni__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
 }
 
 /* Pop Up Styles */
@@ -231,4 +274,157 @@ nav.ek-mobile {
 .ek-humburger.active::after {
     left: -100%;
     opacity: 0;
+}
+
+
+/*Banner styles*/
+.ek-banner__wrap {
+    padding: 0 15px;
+}
+.ek-banner__title{
+    width: 60%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 74px;
+    color: var(--title);
+}
+.ek-banner__text{
+    width: 60%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+.ek-banner__wrap .ek-btn.ek-success {
+    padding: 15px 25px;
+}
+.ek-banner__img_laptop{
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    width: 450px;
+}
+.ek-banner__img_phone{
+    position: absolute;
+    right: 25%;
+    bottom: -30%;
+    transform: rotate(-15deg);
+    width: 110px;
+}
+.ek-banner__img_tablet{
+    width: 205px;
+    position: absolute;
+    right: 2%;
+    bottom: -32%;
+    transform: rotate(15deg);
+}
+
+/*For Who Styles*/
+.ek-for_who .ek-row {
+    margin: 0 -15px;
+}
+.ek-for_who__column {
+    padding: 15px;
+    width: 25%;
+    box-sizing: border-box;
+}
+.ek-for_who__column__img {
+    width: 100%;
+    background: var(--bg);
+    box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%);
+    border-radius: 20px;
+}
+
+/* What We Offer Styles */
+.ek-what_we_offer__column {
+    width: calc(50% - 15px);
+    align-items: center;
+}
+.ek-what_we_offer__column:nth-child(2n) {
+    margin-right: 30px;
+}
+.ek-what_we_offer__column svg{
+    width: 175px;
+    margin-right: 35px;
+}
+.ek-what_we_offer__column__text-wrap {
+    width: calc(100% - 210px);
+}
+.ek-what_we_offer__column__text-wrap .ek-uni__title {
+    text-align: left;
+}
+/* Price Table Styles */
+.ek-table{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.ek-table__bage{
+    width: 65px;
+    height: 65px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--base);
+    border-radius: 10px;
+    background: var(--base);
+    color: white;
+}
+.ek-table__heading:not(.last) {
+    width: 340px;
+    height: 120px;
+    line-height: 30px;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 24px;
+    align-items: center;
+}
+.ek-table__heading.last {
+    width: 340px;
+}
+.ek-table__item > *:not(.ek-table__heading) {
+    display: flex;
+    width: 160px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ek-table__item > *:not(:last-child) {
+    margin-right: 30px;
+}
+.ek-table__item:last-child {
+    margin-top: 25px;
+}
+.ek-table__item > .ek-table__price__heading {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 41px;
+}
+
+/* Our edges Styles */
+/*For Who Styles*/
+.ek-our_edge .ek-row {
+    margin: 0 -15px;
+}
+.ek-our_edges__column {
+    padding: 15px;
+    width: 25%;
+    box-sizing: border-box;
+}
+.ek-our_edges__column__img {
+    width: 100%;
+    background: var(--bg);
+    box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%);
+    border-radius: 20px;
+}
+.ek-our_edges__column > .ek-uni__text {
+    text-align: center;
+    width: 100%;
 }
