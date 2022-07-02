@@ -17,6 +17,7 @@ body {
     box-sizing: border-box;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Glob Styles */
@@ -54,6 +55,34 @@ body {
 }
 .ek-h-fit{
     height: fit-content;
+}
+.ek-btn {
+    color: var(--text);
+    cursor: pointer;
+    background: var(--secondary);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 20px;
+    min-width: 160px;
+    padding: 15px;
+    transition: all .3s ease-in;
+}
+.ek-btn.ek-success, .ek-btn.ek-success.invert:hover {
+    background-color: var(--base);
+    border-color: var(--base);
+    color: #fff;
+}
+.ek-btn.ek-success:hover, .ek-btn.ek-success.invert {
+    background-color: #fff;
+    border-color: var(--base);
+    color: var(--base);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
 
 /* Pop Up Styles */
@@ -131,7 +160,32 @@ body {
     cursor: pointer;
 }
 /* Navigation Styles */
-
+nav.ek-laptop {
+    padding: 85px 0 105px;
+}
+.ek-logo {
+    width: 255px;
+}
+.ek-menu {
+    margin: 0 30px;
+    padding: 0;
+    width: calc(100% - 255px - 356px - 60px);
+}
+.ek-menu li a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    transition: color .3s ease;
+}
+.ek-menu li a:hover {
+    color: var(--base);
+}
+.ek-auth .ek-btn:first-child {
+    margin-right: 20px;
+}
 nav.ek-mobile {
     display: none;
 }

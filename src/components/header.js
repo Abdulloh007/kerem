@@ -5,7 +5,7 @@ export const HeaderComponent = `
                 <div class="ek-logo">
                     <img src="./assets/svg/logo.svg" alt="Logo">
                 </div>
-                <ul class="ek-menu ek-dfw">
+                <ul class="ek-menu ek-dfw ek-alt-center ek-jc-sb">
                     <li><a href="#">Тарифы</a></li>
                     <li><a href="#">Для кого</a></li>
                     <li><a href="#">Возможности</a></li>
