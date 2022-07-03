@@ -109,6 +109,7 @@ a {
     font-family: 'Ubuntu', sans-serif;
     line-height: 55px;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 50px;
 }
 .ek-uni__title{
@@ -118,14 +119,14 @@ a {
     text-align: center;
     height: fit-content;
     width: 100%;
+    margin: 0 0 10px;
 }
 .ek-uni__text {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     color: var(--text);
+    margin: 0;
 }
 /* Form Styles */
 .ek-form {
@@ -274,8 +275,23 @@ a {
     cursor: pointer;
 }
 /* Navigation Styles */
-nav.ek-laptop {
+header {
     padding: 85px 0 105px;
+    height: 85px;
+}
+.ek-nav {
+    position: absolute;
+    background-color: var(--bg);
+    width: 100%;
+    z-index: 11;
+}
+.ek-nav.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 15px -10px var(--footer);
+    margin: 0;
+    padding: 10px 0;
 }
 .ek-logo {
     width: 255px;
@@ -304,12 +320,19 @@ nav.ek-mobile {
     display: none;
 }
 /* - Humburger - */
+.ek-menu__collapse_btn {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--plashka);
+    height: 50px;
+    width: 60px;
+    padding: 10px;
+}
 .ek-humburger {
     position: relative;
-    margin-left: auto;
     height: 2px;
-    width: 30px;
-    background: var(--blue);
+    width: 100%;
+    background: var(--base);
     transition: all .4s ease;
     cursor: pointer;
     z-index: 16;
@@ -319,7 +342,7 @@ nav.ek-mobile {
     position: absolute;
     width: 100%;
     height: 10px;
-    border-top: 2px solid var(--blue);
+    border-top: 2px solid var(--base);
     top: -10px;
     left: 0;
     transition: all .4s ease;
@@ -329,7 +352,7 @@ nav.ek-mobile {
     position: absolute;
     width: 100%;
     height: 10px;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--base);
     top: 0;
     left: 0;
     transition: all .4s ease;
@@ -374,6 +397,7 @@ nav.ek-mobile {
     right: 0;
     bottom: 5%;
     width: 450px;
+    z-index: -1;
 }
 .ek-banner__img_phone{
     position: absolute;
@@ -381,6 +405,7 @@ nav.ek-mobile {
     bottom: -30%;
     transform: rotate(-15deg);
     width: 110px;
+    z-index: -1;
 }
 .ek-banner__img_tablet{
     width: 205px;
@@ -388,6 +413,7 @@ nav.ek-mobile {
     right: 2%;
     bottom: -32%;
     transform: rotate(15deg);
+    z-index: -1;
 }
 
 /*For Who Styles*/
@@ -404,6 +430,7 @@ nav.ek-mobile {
     background: var(--bg);
     box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%);
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 /* What We Offer Styles */
@@ -494,6 +521,7 @@ nav.ek-mobile {
     background: var(--bg);
     box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%);
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 .ek-our_edges__column > .ek-uni__text {
     text-align: center;
@@ -501,6 +529,9 @@ nav.ek-mobile {
 }
 
 /* Our Partners Styles */
+.swiper.ek-review__card__wrap {
+    display: none;
+}
 .ek-partners__logo {
     align-items: center;
     height: auto !important;
@@ -510,6 +541,7 @@ nav.ek-mobile {
 }
 
 .ek-review__card {
+    display: block;
     background: var(--bg);
     box-shadow: 0px 2px 35px 5px
     rgba(182, 182, 182, 0.25);
@@ -519,7 +551,7 @@ nav.ek-mobile {
     width: calc(50% - 15px);
     margin-bottom: 30px;
 }
-.ek-review__card:nth-child(2n) {
+.ek-review__card:nth-child(2n - 1) {
     margin-right: 30px;
 }
 .ek-review__card__meta {
@@ -528,6 +560,7 @@ nav.ek-mobile {
 .ek-review__card__meta__data {
     width: calc(100% - 85px);
     align-items: center;
+    text-align: left;
 }
 .ek-review__card__meta img {
     width: 65px;
@@ -549,6 +582,7 @@ nav.ek-mobile {
     line-height: 24px;
     margin: 0;
     min-height: 235px;
+    text-align: left;
 }
 
 
@@ -587,8 +621,157 @@ footer {
 
 /* Media for Different Screens */
 /* ----Tablet Styles---- */
-@media (max-width: 768px) {
-    
+@media (max-width: 992px) {
+    /* Correcting Styles */
+    .ek-laptop {
+        display: none;
+    }
+    nav.ek-mobile {
+        display: block;
+    }
+    ul.ek-menu.mobile {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 10px);
+        width: 100%;
+        margin: 0;
+        padding: 105px 180px;
+        background-color: var(--plashka);
+        box-shadow: 0px 2px 5px rgb(0 0 0 / 25%);
+        box-sizing: border-box;
+        border-radius: 20px;
+        z-index: 15;
+        overflow: hidden;
+        transition: all .2s ease;
+    }
+    .ek-menu li {
+        margin-bottom: 20px;
+    }
+    .ek-menu li a {
+        text-align: center;
+        display: block;
+    }
+    /* Global Styles */
+    .ek-container {
+        max-width: 768px;
+    }
+    header {
+        /* padding: auto; */
+    }
+    .ek-footer__column {
+        box-sizing: border-box;
+        width: calc(50% - (150px / 2));
+    }
+    .ek-footer__column:nth-child(2n - 1){
+        margin-right: 150px;
+
+    }
+    .ek-footer__column:nth-child(2n){
+        margin-right: 0;
+
+    }
+    /* Home page Styles */
+    .ek-section__heading {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .ek-uni__text {
+        font-size: 18px;
+    }
+    .ek-banner__title {
+        width: 62%;
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .ek-banner__text {
+        font-size: 24px;
+        margin-bottom: 90px;
+    }
+    .ek-banner__img_laptop {
+        width: 350px;
+        right: 0;
+        bottom: 15%;
+    }
+    .ek-banner__img_phone {
+        width: 85px;
+        transform: rotate(0);
+        right: 32%;
+        bottom: -20%;
+    }
+    .ek-banner__img_tablet {
+        width: 164px;
+        transform: rotate(0);
+        right: 7%;
+        bottom: -23%;
+    }
+    /* For who Style */
+    .ek-for_who__column {
+        width: 50%;
+    }
+    /* What we Offer Styles */
+    .ek-what_we_offer__column, .ek-what_we_offer__column:nth-child(2n) {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .ek-what_we_offer__column svg {
+        height: 100px;
+        margin-right: 30px;
+    }
+    /* Tarifs Styles */
+    .ek-table__item > * {
+        font-size: 20px !important;
+    }
+    .ek-table__bage {
+        font-size: 24px;
+        width: 55px;
+        height: 55px;
+    }
+    .ek-table__item > .ek-table__heading {
+        width: 210px;
+        line-height: 24px;
+    }
+    .ek-table__item > *:not(.ek-table__heading) {
+        width: 110px;
+    }
+    .ek-table__item > *:not(:last-child) {
+        margin-right: 10px;
+    }
+    .ek-table__item > .ek-table__price__heading {
+        font-size: 24px !important;
+    }
+    .ek-table__item > .ek-btn {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 10px 12px;
+        height: fit-content;
+        box-sizing: border-box;
+    }
+    /* Our Edges Styles */
+    .ek-our_edges__column {
+        width: 50%;
+    }
+    /* Reviews Styles */
+    .ek-review__card__wrap {
+        display: none;
+    }
+    .swiper.ek-review__card__wrap {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .ek-review__card__text {
+        min-height: auto;
+    }
+    .ek-review__card:nth-child(2n - 1) {
+        margin-right: 0;
+    }
+    .ek-review__carousel {
+        bottom: 0 !important;
+    }
+    .ek-review__carousel .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+    }
 }
 /* ----Mobile Styles---- */
 @media (max-width: 576px) {

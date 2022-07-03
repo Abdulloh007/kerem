@@ -13,8 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     //ScrollTop Fixed menu
     const nav = document.querySelectorAll('.ek-nav');
     
-    window.addEventListener('scroll', ()=>{
-        if (document.documentElement.scrollTop > 80) {
+    window.addEventListener('scroll', ()=> {
+        if (document.body.scrollTop > 80) {
             nav.forEach(item => item.classList.add('fix'));
         }else {
             nav.forEach(item => item.classList.remove('fix'));
@@ -22,25 +22,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     // Mobile Menu Srcipt
-    if(window.innerWidth <= 768) {
-        const sideBar = document.querySelector('.ek-m-menu'),
-        sideBarOverlay = document.querySelector('.ek-menu_overlay'),
-        sideBarBtn = document.querySelector('.ek-humburger');
-    
+    if(window.innerWidth <= 992) {
+        const sideBar = document.querySelector('.ek-menu.mobile'),
+        sideBarBtn = document.querySelector('.ek-menu__collapse_btn'),
+        defaultHeight = sideBar.clientHeight;
+        
+        sideBar.style.height = 0;
+        sideBar.style.padding = 0;
+
+
         sideBarBtn.addEventListener('click', function () {
             if (this.classList.contains('active')) {
                 this.classList.remove('active');
-                sideBar.classList.remove('open');
-                sideBarOverlay.classList.remove('open');
-                sideBarOverlay.style.display = 'none'
-                document.documentElement.style.overflow = ''
+                sideBar.style.height = 0;
+                sideBar.style.padding = 0;
             }
             else {
                 this.classList.add('active');
-                sideBar.classList.add('open');
-                sideBarOverlay.classList.add('open');
-                sideBarOverlay.style.display = '';
-                document.documentElement.style.overflow = 'hidden'
+                sideBar.style.height = defaultHeight + 'px';
+                sideBar.style.padding = '105px 180px';
             }
         });
         

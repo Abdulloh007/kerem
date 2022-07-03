@@ -19,11 +19,11 @@ export const HeaderComponent = `
     </nav>
     <nav class="ek-mobile ek-nav">
         <div class="ek-container">
-            <div class="ek-row">
+            <div class="ek-row ek-position_relative ek-alt-center ek-jc-sb">
                 <div class="ek-logo">
                     <img src="./assets/svg/logo.svg" alt="Logo">
                 </div>
-                <button class="ek-humburger"></button>
+                <button class="ek-menu__collapse_btn ek-dfw ek-alt-center ek-jc-c"><span class="ek-humburger"></span></button>
                 <ul class="ek-menu mobile">
                     <li><a href="#">Тарифы</a></li>
                     <li><a href="#">Для кого</a></li>
