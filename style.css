@@ -548,11 +548,11 @@ footer {
 
 
 /* Media for Different Screens */
-/* -----Tablet Styles----- */
+/* ----Tablet Styles---- */
 @media (max-width: 768px) {
     
 }
-/* -----Mobile Styles----- */
+/* ----Mobile Styles---- */
 @media (max-width: 576px) {
     
 }
