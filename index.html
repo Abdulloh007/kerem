@@ -23,7 +23,7 @@
                     <p class="ek-banner__text">
                         Быстро создай свой сайт <br> и управляй своими продажами
                     </p>
-                    <button class="ek-btn ek-success">Зарегистрироваться</button>
+                    <button id="sign_up" class="ek-btn ek-success ek-pop_up__btn">Зарегистрироваться</button>
                     <img src="assets/img/laptop.png" class="ek-banner__img_laptop">
                     <img src="assets/img/phone.png" alt="" class="ek-banner__img_phone">
                     <img src="assets/img/tablet.png" alt="" class="ek-banner__img_tablet">
@@ -370,6 +370,34 @@
     <!-- Footer Content -->
     <footer id="footer"></footer>
 
+    <!-- PopUp Section -->
+    <section class="ek-pop_ups">
+        <div data-target="sign_up" class="ek-pop_up ek-dfw ek-alt-center">
+            <div class="ek-pop_up__wrap">
+                <div class="ek-pop_up__wrap__header">
+                    <h4>Регистрация</h4>
+                    <i class="fa-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1.5L22.8627 22.5627" stroke="#4CB853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.8625 1.5L1.49986 22.5627" stroke="#4CB853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </i>
+                </div>
+                <form class="ek-pop_up__wrap__form ek-form">
+                    <label class="ek-form__label">
+                        <input class="ek-form__input" type="text" name="" placeholder="Ваше имя">
+                    </label>
+                    <label class="ek-form__label">
+                        <input class="ek-form__input" type="email" name="" placeholder="Ваш email">
+                    </label>
+                    <label class="ek-form__label">
+                        <input class="ek-form__input" type="phone" name="" placeholder="+7(___)___-__-__">
+                    </label>
+                    <button class="ek-btn ek-success" type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="./index.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
@@ -379,7 +407,8 @@
       var swiper = new Swiper(".ek-partners__carousel", {
         slidesPerView: 4,
         spaceBetween: 30,
-        loop: true
+        loop: true,
+        autoplay: true
       });
     </script>
 </body>

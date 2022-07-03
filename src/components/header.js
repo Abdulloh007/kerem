@@ -12,7 +12,7 @@ export const HeaderComponent = `
                 </ul>
                 <div class="ek-auth">
                     <button class="ek-btn ek-success invert">Вход</button>
-                    <button class="ek-btn ek-success">Регистрация</button>
+                    <button id="sign_up" class="ek-btn ek-success ek-pop_up__btn">Регистрация</button>
                 </div>
             </div>
         </div>

@@ -127,6 +127,39 @@ a {
     align-items: center;
     color: var(--text);
 }
+/* Form Styles */
+.ek-form {
+    text-align: center;
+    margin: 0;
+}
+.ek-form, .ek-form__label {
+    display: block;
+    width: 100%;
+}
+.ek-form__label {
+    margin-bottom: 50px;
+}
+.ek-form__label:last-child {
+    margin-bottom: 60px;
+}
+.ek-form__input {
+    border-radius: 10px;
+    background-color: var(--bg);
+    border: 0.5px solid var(--base);
+    color: var(--text);
+    font-size: 24px;
+    width: 100%;
+    padding: 20px;
+    transition: border .3s ease;
+    outline: none;
+}
+.ek-form__input:focus, .ek-form__input:active{
+    border: .5px solid transparent;
+}
+.ek-form__input::placeholder {
+    color: var(--secondary);
+}
+
 /* Swiper Slider Styles */
 .swiper {
     width: 100%;
@@ -189,7 +222,10 @@ a {
         transform: scale(1);
     }
 }
-.ek-pop_up{
+.ek-pop_ups {
+    margin: 0;
+}
+.ek-pop_up {
     position: fixed;
     top: 0;
     left: 0;
@@ -197,7 +233,7 @@ a {
     height: 100%;
     padding: 30px 15px;
     box-sizing: border-box;
-    background-color: rgb(21 43 100 / 20%);
+    background-color: rgb(20 20 20 / 39%);
     overflow-y: overlay;
     z-index: -1;
     opacity: 0;
@@ -208,29 +244,31 @@ a {
     z-index: 25;
     animation: .2s pop-up ease-in;
 }
-.ek-pop_up-wrap {
+.ek-pop_up__wrap {
     position: relative;
-    width: 370px;
+    width: 540px;
+    max-width: 100%;
     margin: auto auto;
-    background: #FFFFFF;
+    background: var(--plashka);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 65px 50px;
-    border-radius: 6px;
+    padding: 75px 50px;
+    border-radius: 15px;
 }
-.ek-pop_up-header {
-    margin-bottom: 35px;
+.ek-pop_up__wrap__header {
+    margin-bottom: 60px;
 }
-.ek-pop_up-header h4 {
-    font-size: 20px;
+.ek-pop_up__wrap__header h4 {
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
     color: var(--blue);
     margin: 0;
 }
-.ek-pop_up-header i {
+.ek-pop_up__wrap__header i {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 40px;
+    right: 40px;
     color: #E3E3E3;
     font-size: 24px;
     cursor: pointer;

@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     
     //PopUp`s
-    let popUpBtns = document.querySelectorAll('.ek-pop_up-btn'),
+    let popUpBtns = document.querySelectorAll('.ek-pop_up__btn'),
     popUps = document.querySelectorAll('.ek-pop_up');
     
     function popUper(elem) {
