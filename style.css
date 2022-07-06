@@ -616,6 +616,10 @@ footer {
     color: var(--footer)
 } 
 
+/* .ek-footer__none{
+    display: none;
+} */
+
 
 
 
@@ -775,5 +779,132 @@ footer {
 }
 /* ----Mobile Styles---- */
 @media (max-width: 576px) {
+    /*Section styles*/
+    section {
+        margin-bottom: 70px;
+    }
+    /*Header mobile styles*/
+    .ek-logo img{
+        width: 142px;
+    }
+    .ek-menu__collapse_btn{
+        height: 40px;
+        width: 40px;
+    }
+    header {
+        padding: 85px 0 78px;
+        height: 85px;
+    }
+    h1.ek-banner__title {
+        width: 90%;
+        margin-top: 0;
+    }
+    p.ek-banner__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .ek-banner__text {
+        margin-bottom: 35px !important;
+        width: 62%;
+    }
+    img.ek-banner__img_laptop, img.ek-banner__img_phone, img.ek-banner__img_tablet {
+        display: none;
+    }
+    /*Register popup mobile styles*/
+    button#sign_up {
+        width: 100%;
+    }
+    .ek-pop_up__wrap {
+        margin-top: 40px;
+    }
+    .ek-pop_up__wrap__header {
+        line-height: 23px;
+        text-align: center;
+        align-items: center;
+    }
+    input.ek-form__input {
+        width: 290px;
+        height: 45;
+    }
+    .ek-form__label {
+        margin-bottom: 35px;
+    }
+    button.ek-btn.ek-success {
+        width: 100%;
+    }
     
+    /* Home page mobile Styles */
+
+    h1.ek-section__heading {
+        font-size: 28px;
+        line-height: 32px;
+        align-items: center;
+        text-align: center;
+    }
+    /* For who mobile Style */
+    .ek-for_who__column {
+        width: 100%;
+        padding: 0 15px;
+    }
+    p.ek-uni__title{
+        margin: 10px 0;
+    }
+    /*What we Offer mobile Styles*/
+    h4.ek-uni__title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    svg.ek-svg {
+        width: 90px;
+    }
+    .ek-what_we_offer__column__text-wrap {
+        width: calc(100% - 143px);
+    }
+    .ek-what_we_offer__column {
+        align-items: end;
+    }
+    p.ek-uni__text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    /* Our Edges mobile Styles */
+    .ek-hide_title_mobile{
+        display: none;
+    }
+    .ek-our_edges__column {
+        width: 100%;
+    }
+    /*Review mobile Styles*/
+    .ek-review__card__meta.ek-dfw img {
+        width: 55px;
+        height: 55px;
+    }
+    .ek-review__card__meta.ek-dfw h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /*Footer mobile Styles*/
+    
+    /* footer#footer .ek-container {
+        display: none;
+    }
+    .ek-footer__none{
+        display: block;
+        background: var(--base);
+        padding-top: 30px;
+    }
+    ul.ek-footer__column__list {
+        width: 115px;
+    }
+    .ek-footer__column:nth-child(2n - 1) {
+        margin-right: 90px;
+    }
+    ul.ek-footer__column__list > li > a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    } */
+
 }
