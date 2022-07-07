@@ -505,7 +505,9 @@ nav.ek-mobile {
     font-size: 36px;
     line-height: 41px;
 }
-
+.ek-tarifs__carousel {
+    display: none;
+}
 /* Our edges Styles */
 /*For Who Styles*/
 .ek-our_edge .ek-row {
@@ -749,6 +751,7 @@ footer {
         padding: 10px 12px;
         height: fit-content;
         box-sizing: border-box;
+        min-width: 50px;
     }
     /* Our Edges Styles */
     .ek-our_edges__column {
@@ -777,10 +780,13 @@ footer {
         background-color: #000;
     }
 }
-/* ----Mobile Styles---- */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    /* Global Styles */
+    .ek-container {
+        width: 330px;
+    }
     /*Section styles*/
-    section {
+     section {
         margin-bottom: 70px;
     }
     /*Header mobile styles*/
@@ -795,17 +801,16 @@ footer {
         padding: 85px 0 78px;
         height: 85px;
     }
-    h1.ek-banner__title {
-        width: 90%;
+    .ek-banner__title {
+        width: 100%;
         margin-top: 0;
+        font-size: 34px;
     }
     p.ek-banner__text {
         font-size: 20px;
         line-height: 24px;
-    }
-    .ek-banner__text {
-        margin-bottom: 35px !important;
-        width: 62%;
+        margin-bottom: 35px;
+        width: 100%;
     }
     img.ek-banner__img_laptop, img.ek-banner__img_phone, img.ek-banner__img_tablet {
         display: none;
@@ -818,13 +823,16 @@ footer {
         margin-top: 40px;
     }
     .ek-pop_up__wrap__header {
-        line-height: 23px;
         text-align: center;
         align-items: center;
     }
+    .ek-pop_up__wrap__header h4 {
+        font-size: 20px;
+        font-weight: 600;    
+    }
     input.ek-form__input {
-        width: 290px;
-        height: 45;
+        font-size: 20px;
+        padding: 20px;
     }
     .ek-form__label {
         margin-bottom: 35px;
@@ -835,20 +843,22 @@ footer {
     
     /* Home page mobile Styles */
 
-    h1.ek-section__heading {
+    .ek-section__heading {
         font-size: 28px;
         line-height: 32px;
         align-items: center;
         text-align: center;
     }
+
     /* For who mobile Style */
     .ek-for_who__column {
         width: 100%;
         padding: 0 15px;
     }
     p.ek-uni__title{
-        margin: 10px 0;
+        margin: 10px 0 20px;
     }
+        
     /*What we Offer mobile Styles*/
     h4.ek-uni__title {
         font-size: 18px;
@@ -856,18 +866,74 @@ footer {
     }
     svg.ek-svg {
         width: 90px;
+        height: auto;
+        margin-right: 10px;
     }
     .ek-what_we_offer__column__text-wrap {
-        width: calc(100% - 143px);
-    }
-    .ek-what_we_offer__column {
-        align-items: end;
+        width: calc(100% - 105px);
     }
     p.ek-uni__text {
         font-size: 14px;
         line-height: 17px;
     }
-    
+
+    /* Tarifs Styles */
+    .ek-tarifs, .ek-reviews {
+        margin-bottom: 40px;
+    }
+    .ek-tarifs .ek-section__heading, .ek-reviews .ek-section__heading {
+        margin: 0;
+    } 
+    .ek-table {
+        display: none;
+    }
+    .swiper.ek-tarifs__carousel {
+        display: block;
+        /* box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%); */
+        /* border-radius: 15px; */
+        padding: 30px 30px;
+        margin: 0 -30px;
+    }
+    .ek-tarifs__item {
+        padding: 20px 80px 50px;
+        box-sizing: border-box;
+        background: #F7FFF5;
+        box-shadow: 0px 2px 35px 5px rgba(182, 182, 182, 0.25);
+        border-radius: 15px;
+    }
+    .ek-tarifs__item , .ek-tarifs__item p {
+        
+        text-align: center;
+    }
+    .ek-tarifs__item > *, .ek-tarifs__item__detail > *:nth-child(1n) {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .ek-table__bage {
+        margin: auto auto 80px;
+    }
+    .ek-table__price__heading {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--text);
+        margin-bottom: 70px;
+    }
+    .ek-tarifs__item__detail {
+        margin-bottom: 30px;
+    }
+    .ek-uni__text.ek-table__heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .ek-tarifs__item__detail .ek-table__text {
+        text-align: left;
+        width: auto;
+        margin: auto;
+        
+    }
     /* Our Edges mobile Styles */
     .ek-hide_title_mobile{
         display: none;
@@ -876,6 +942,14 @@ footer {
         width: 100%;
     }
     /*Review mobile Styles*/
+    .swiper.ek-review__card__wrap {
+        margin: 0 -30px;
+        padding: 30px 30px 0;
+    }
+    .ek-review__card__wrap {
+        margin: 0 -30px;
+        padding: 30px 30px 0;
+    }
     .ek-review__card__meta.ek-dfw img {
         width: 55px;
         height: 55px;
@@ -884,27 +958,21 @@ footer {
         font-size: 20px;
         line-height: 24px;
     }
+    /* box-shadow: 0px 2px 35px 5px rgb(182 182 182 / 25%); */
 
-    /*Footer mobile Styles*/
-    
-    /* footer#footer .ek-container {
+    /*Footer Styles*/
+    .ek-footer__column:nth-child(1n) {
+        width: calc(50% - (85px / 2));
+    }
+    .ek-footer__column:nth-child(2), .ek-footer__column:nth-child(3) {
         display: none;
     }
-    .ek-footer__none{
-        display: block;
-        background: var(--base);
-        padding-top: 30px;
-    }
-    ul.ek-footer__column__list {
-        width: 115px;
-    }
     .ek-footer__column:nth-child(2n - 1) {
-        margin-right: 90px;
+        margin-right: 85px;
     }
-    ul.ek-footer__column__list > li > a {
-        font-weight: 400;
+    .ek-footer__column__list li a {
         font-size: 12px;
-        line-height: 15px;
-    } */
-
+    }
 }
+/* ----Mobile Styles---- */
+@media (max-width: 576px) { /*...*/ }
