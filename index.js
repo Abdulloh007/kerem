@@ -20,36 +20,39 @@ window.addEventListener('DOMContentLoaded', () => {
             nav.forEach(item => item.classList.remove('fix'));
         }
     });
-    
+    window.addEventListener('resize', () => goAdaptive())
     // Mobile Menu Srcipt
-    if(window.innerWidth <= 992) {
-        const sideBar = document.querySelector('.ek-menu.mobile'),
-        sideBarBtn = document.querySelector('.ek-menu__collapse_btn'),
-        defaultHeight = sideBar.offsetHeight;
-        
-        sideBar.style.height = 0;
-        sideBar.style.padding = 0;
-
-
-        sideBarBtn.addEventListener('click', function () {
-            if (this.classList.contains('active')) {
-                this.classList.remove('active');
-                sideBar.style.height = 0;
-                sideBar.style.padding = 0;
-            }
-            else {
-                this.classList.add('active');
-                sideBar.style.height = defaultHeight + 'px';
-                if(window.innerWidth <= 992 && window.innerWidth > 768) {
-                    sideBar.style.padding = '105px 180px';
-                }else {
-                    sideBar.style.padding = '60px 5px';
-
+    function goAdaptive() {
+        if(window.innerWidth <= 992) {
+            const sideBar = document.querySelector('.ek-menu.mobile'),
+            sideBarBtn = document.querySelector('.ek-menu__collapse_btn'),
+            defaultHeight = sideBar.offsetHeight;
+            
+            sideBar.style.height = 0;
+            sideBar.style.padding = 0;
+    
+    
+            sideBarBtn.addEventListener('click', function () {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    sideBar.style.height = 0;
+                    sideBar.style.padding = 0;
                 }
-            }
-        });
-        
+                else {
+                    this.classList.add('active');
+                    sideBar.style.height = defaultHeight + 'px';
+                    if(window.innerWidth <= 992 && window.innerWidth > 768) {
+                        sideBar.style.padding = '105px 180px';
+                    }else {
+                        sideBar.style.padding = '60px 5px';
+    
+                    }
+                }
+            });
+            
+        }
     }
+    goAdaptive();
     
     //PopUp`s
     let popUpBtns = document.querySelectorAll('.ek-pop_up__btn'),
