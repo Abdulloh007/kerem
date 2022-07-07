@@ -438,6 +438,9 @@ nav.ek-mobile {
     width: calc(50% - 15px);
     align-items: center;
 }
+.ek-what_we_offer__column:nth-child(2), .ek-what_we_offer__column:nth-child(3) {
+    margin-bottom: 30px;
+} 
 .ek-what_we_offer__column:nth-child(2n) {
     margin-right: 30px;
 }
@@ -715,7 +718,7 @@ footer {
         width: 50%;
     }
     /* What we Offer Styles */
-    .ek-what_we_offer__column, .ek-what_we_offer__column:nth-child(2n) {
+    .ek-what_we_offer__column:nth-child(1n) {
         width: 100%;
         margin: 0 0 20px;
     }
@@ -782,6 +785,9 @@ footer {
 }
 @media (max-width: 768px) {
     /* Global Styles */
+    ul.ek-menu.mobile {
+        padding: 60px 5px;
+    }
     .ek-container {
         width: 330px;
     }
