@@ -664,9 +664,6 @@ footer {
     .ek-container {
         max-width: 768px;
     }
-    header {
-        /* padding: auto; */
-    }
     .ek-footer__column {
         box-sizing: border-box;
         width: calc(50% - (150px / 2));
