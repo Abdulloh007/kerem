@@ -39,7 +39,7 @@ export const FooterComponent = `
                 <li><a href="javascript:void(0)">Звонок по России бесплатный</a></li>
                 <li><a href="#">+7 495 000-00-00</a></li>
                 <li><a href="javascript:void(0)">Телефон в Москве</a></li>
-                <li><a href="#">2022 ООО «Екрем»</a></li>
+                <li><a href="#">2022 ООО «Экрем»</a></li>
             </ul>
         </div>
     </div>
