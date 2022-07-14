@@ -154,6 +154,9 @@ a {
     margin-right: 5px;
     color: var(--text);
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .ek-tn__item.active::before {
     content: '';
@@ -167,6 +170,13 @@ a {
 }
 .ek-tab {
     position: relative;
+    opacity: 0;
+    z-index: -999;
+    transition: opacity .1s ease-in;
+}
+.ek-tab.active {
+    opacity: 1;
+    z-index: auto;
 }
 /* Actions Styles */
 .ek-mc__actions {
@@ -174,6 +184,7 @@ a {
     border-radius: 0 0 15px 15px;
     padding: 0 80px 30px;
     /* justify-content: space-between; */
+    box-shadow: 0px 4px 8px rgba(170, 170, 170, 0.59);
 }
 .ek-mc__action {
     border: none;

@@ -31,4 +31,31 @@ window.addEventListener('DOMContentLoaded', () => {
         popUpBtns.forEach((item) =>  popUper(item));
     }
 
+    //Tabination
+    const tabination = document.querySelectorAll('.ek-tabination');
+
+    function activeTabination(elem) {
+        const tabNav = elem.querySelector('.ek-tab_navigation'),
+        tabBtns = elem.querySelectorAll('.ek-tn__item'),
+        tabs = elem.querySelectorAll('.ek-tab');
+
+        tabNav.addEventListener('click', function () {
+            for (let i = 0; i < tabBtns.length; i++) {
+                if (event.target == tabBtns[i]) {
+                    showTab(i);
+                }
+            }
+        })
+        showTab(0);
+        function showTab(n) {
+            tabBtns.forEach((item) => item.classList.remove('active'));
+            tabs.forEach((item) => item.classList.remove('active'));
+            tabBtns[n].classList.add('active');
+            tabs[n].classList.add('active');
+        }
+    }
+    if (tabination !== undefined && tabination !== null) {
+        tabination.forEach(item => activeTabination(item));
+    }
+
 })
