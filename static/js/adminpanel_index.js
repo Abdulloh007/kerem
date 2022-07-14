@@ -1,4 +1,4 @@
-import {SidebarComponent} from '../components/adminpanel/sidebar.js'
+import {SidebarComponent} from './components/sidebar.js'
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';

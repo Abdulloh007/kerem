@@ -1,5 +1,5 @@
-import {HeaderComponent} from "./src/components/header.js";
-import {FooterComponent} from "./src/components/footer.js";
+import {HeaderComponent} from "./components/header.js";
+import {FooterComponent} from "./components/footer.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
