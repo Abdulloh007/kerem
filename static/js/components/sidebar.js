@@ -18,51 +18,51 @@ export const SidebarComponent = `
             </div>
         </div>
         <nav class="ek-sidebar__navigation">
-            <a href="../dashboard/dashboard.html" class="ek-sn__item ek-dfw">
+            <a href="./dashboard.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/home.svg" alt="">
                 <p>Главная</p>
             </a>
-            <a href="../sales/sales.html" class="ek-sn__item ek-dfw">
+            <a href="./sales.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/sales.svg" alt="">
                 <p>Продажи</p>
             </a>
-            <a href="../custom/custom.html" class="ek-sn__item ek-dfw">
+            <a href="./custom.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/custom.svg" alt="">
                 <p>Закупки</p>
             </a>
-            <a href="../storage/storage.html" class="ek-sn__item ek-dfw">
+            <a href="./storage.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/storage.svg" alt="">
                 <p>Склад</p>
             </a>
-            <a href="../cash__and__bank/cash__and__bank.html" class="ek-sn__item ek-dfw">
+            <a href="./cash__and__bank.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/cash.svg" alt="">
                 <p>Касса и банк</p>
             </a>
-            <a href="../retail/retail.html" class="ek-sn__item ek-dfw">
+            <a href="./retail.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/retail.svg" alt="">
                 <p>Розница</p>
             </a>
-            <a href="../production/production.html" class="ek-sn__item ek-dfw">
+            <a href="./production.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/production.svg" alt="">
                 <p>Производство</p>
             </a>
-            <a href="../integration/integration.html" class="ek-sn__item ek-dfw">
+            <a href="./integration.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/integration.svg" alt="">
                 <p>Интеграции</p>
             </a>
-            <a href="../reports/reports.html" class="ek-sn__item ek-dfw">
+            <a href="./reports.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/reports.svg" alt="">
                 <p>Отчёты</p>
             </a>
-            <a href="../site__setup/site__setup.html" class="ek-sn__item ek-dfw">
+            <a href="./site__setup.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/site_setup.svg" alt="">
                 <p>Настройки сайта</p>
             </a>
-            <a href="../account__setup/account__setup.html" class="ek-sn__item ek-dfw">
+            <a href="./account__setup.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/account_setup.svg" alt="">
                 <p>Настройки учётной системы</p>
             </div>
-            <a href="../server__setup/server__setup.html" class="ek-sn__item ek-dfw">
+            <a href="./server__setup.html" class="ek-sn__item ek-dfw">
                 <img src="../static/svg/adminpanel/server__setup.svg" alt="">
                 <p>Админ <br>
                     панель сервера</p>
