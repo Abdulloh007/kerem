@@ -7,8 +7,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const header =  document.querySelector('#header');
     const footer =  document.querySelector('#footer');
-    header.innerHTML = HeaderComponent; 
-    footer.innerHTML = FooterComponent;
+    if(header != undefined || header != null) {
+        header.innerHTML = HeaderComponent;
+    }
+    if(footer != undefined || footer != null) {
+        footer.innerHTML = FooterComponent;
+    }
     
     //ScrollTop Fixed menu
     const nav = document.querySelectorAll('.ek-nav');

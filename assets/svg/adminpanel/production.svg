@@ -1,0 +1,26 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_788_13751)">
+<rect x="0.89563" y="27.5476" width="38.2087" height="7.0887" rx="2.20696" stroke="#F4F3EE" stroke-width="2"/>
+<path d="M9.16308 26.6473L9.1631 14.9902" stroke="#F4F3EE" stroke-width="2" stroke-linecap="round"/>
+<line x1="9.57584" y1="14.2624" x2="19.1667" y2="8.14062" stroke="#F4F3EE" stroke-width="1.20696" stroke-linecap="round"/>
+<line x1="20.4267" y1="8.16628" x2="27.7177" y2="15.1957" stroke="#F4F3EE" stroke-width="0.603479" stroke-linecap="round"/>
+<circle cx="20" cy="8.17408" r="1.81044" fill="#F4F3EE"/>
+<circle cx="27.7256" cy="15.6225" r="1.20696" fill="#F4F3EE"/>
+<circle cx="9.39178" cy="14.9157" r="3.01739" fill="#F4F3EE"/>
+<line x1="27.6675" y1="15.8561" x2="24.4663" y2="18.2835" stroke="#F4F3EE" stroke-width="0.603479" stroke-linecap="round"/>
+<line x1="27.7702" y1="15.8376" x2="30.8175" y2="18.4556" stroke="#F4F3EE" stroke-width="0.603479" stroke-linecap="round"/>
+<path d="M25.2083 20.8274C25.2083 20.437 25.5248 20.1205 25.9152 20.1205H27.2313H28.2488H29.5361C29.9265 20.1205 30.243 20.437 30.243 20.8274V24.4483C30.243 24.8388 29.9265 25.1553 29.5361 25.1553H25.9152C25.5248 25.1553 25.2083 24.8388 25.2083 24.4483V20.8274Z" stroke="#F4F3EE"/>
+<rect x="3.8596" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="8.73655" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="13.6138" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="18.4912" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="23.3684" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="28.2458" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+<rect x="33.1232" y="30.7903" width="3.01739" height="0.603479" rx="0.301739" stroke="#F4F3EE" stroke-width="0.603479"/>
+</g>
+<defs>
+<clipPath id="clip0_788_13751">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
