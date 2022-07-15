@@ -59,10 +59,147 @@
                             <input type="text" name="" id="" placeholder="Поиск"> 
                         </label>
                     </div>
+                    <div class="ek-category">
+                        <div class="ek-meta__wrap">
+                            <ul class="ek-ct__list ek-ct__overflow ek-dfw">
+                                <li class="ek-ct__lists">№</li>
+                                <li class="ek-ct__lists">Дата</li>
+                                <li class="ek-ct__lists">Контрагент</li>
+                                <li class="ek-ct__lists">Организация</li>
+                                <li class="ek-ct__lists">Сумма</li>
+                                <li class="ek-ct__lists">Статус 
+                                    <select class="ek-ct__select">
+                                    <option selected></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    </select>
+                                </li>
+                                <li class="ek-ct__lists">Склад</li>
+                                <li class="ek-ct__lists">Менеджер</li>
+                                <li class="ek-ct__lists">Точка продажи</li>
+                                <li class="ek-ct__lists">Комментарий</li>
+                                <li class="ek-ct__lists">Артикул</li>
+                                <li class="ek-ct__lists">Наименование</li>
+                                <li class="ek-ct__lists">Цвет</li>
+                                <li class="ek-ct__lists">Размер</li>
+                                <li class="ek-ct__lists">Единица измерения</li>
+                                <li class="ek-ct__lists">В наличии</li>
+                                <li class="ek-ct__lists">В резерве</li>
+                                <li class="ek-ct__lists">Доступно
+                                    <img src="../static/svg/adminpanel/category-filter.svg" class="ek-filter__icon" alt="" id="togglePopup">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="ek-sales">
+                            <div class="ek-sales__item">
+                                <table>
+                                    <tr>
+                                        <td><input type="checkbox" value="" class="ek-sales__chack ek-chack__size"></td>
+                                        <td>001</td>
+                                        <td>18:20</td>
+                                        <td>WildBerries</td>
+                                        <td>ИП Колошеева</td>
+                                        <td>20000</td>
+                                        <td>20000</td>
+                                        <td>10000</td>
+                                        <td>0,0</td>
+                                        <td>0,0</td>
+                                    </tr>
+                                </table>
+                               </div>
+                           
+                        </div> -->
+                    </div> 
                 </div>
+
             </div>
         </section>
     </main>
+
+<!-- Popup Category -->
+<!-- <div class="popup">
+    <ul class="ek-popup__list">
+    <li><input type="checkbox" value="">
+        №
+    </li>
+     <li><input type="checkbox" value="">
+        Доступно
+    </li>
+    <li><input type="checkbox" value="">
+        В резерве
+    </li>
+    <li><input type="checkbox" value="">
+        В наличии
+    </li>
+    <li><input type="checkbox" value="">
+        Размер
+    </li>
+    <li><input type="checkbox" value="">
+        Единица измерения
+    </li>
+     <li><input type="checkbox" value="">
+        Цвет
+    </li>
+    <li><input type="checkbox" value="">
+        Комментарий
+    </li>
+    <li><input type="checkbox" value="">
+        Наименование
+    </li>
+     <li><input type="checkbox" value="">
+        Точка продажи
+    </li>
+    <li><input type="checkbox" value="">
+        Артикул
+    </li>
+    <li><input type="checkbox" value="">
+        Статус
+    </li>
+     <li><input type="checkbox" value="">
+       Менеджер
+    </li>
+    <li><input type="checkbox" value="">
+        Склад
+    </li>
+    <li><input type="checkbox" value="">
+        Организация
+    </li>
+    <li><input type="checkbox" value="">
+       Сумма
+
+    </li>
+    <li><input type="checkbox" value="">
+        Контрагент
+    </li>
+    <li><input type="checkbox" value="">
+        Дата
+    </li>    
+     
+    </ul>
+</div>
+
+<script>
+    const toggleBtn = document.getElementById("togglePopup");
+const popup = document.querySelector(".popup");
+
+const removePopup = () => {
+    popup.classList.remove("visible");
+    document.onclick = null;
+};
+
+toggleBtn.addEventListener(
+    "click",
+    (e) => {
+        popup.classList.add("visible");
+        e.stopPropagation();
+        document.onclick = removePopup;
+    },
+    true
+);
+
+popup.onclick = (e) => e.stopPropagation();
+
+</script> -->
 
     <script type="module" src="../static/js/adminpanel_index.js"></script>
     <script src="../static/js/dashboard.js"></script>
